@@ -183,6 +183,20 @@ img {
     img {
         width: 100%;
     }
+    .text-inicio h2 {
+        font-size: 1.8em;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .parrafo,
+    .bienvenidos {
+        font-size: 15px;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
 }
 
 
