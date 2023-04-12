@@ -1,0 +1,410 @@
+/* mas formatos de letras */
+
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+.header {
+    background-color: rgb(41, 156, 41);
+    color: white;
+    padding: 15px;
+}
+
+.header-title h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.header-form {
+    display: none;
+}
+
+.list-item {
+    text-align: center;
+}
+
+.header-nav ul li a:hover {
+    color: red;
+}
+
+.header-title img {
+    height: 80px;
+    margin-right: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .header-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-form {
+        display: center;
+    }
+
+    .header-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: 25vh 15vh;
+    }
+
+    .header-nav {
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .header-list {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+}
+
+@media (min-width: 1201px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-form {
+        display: block;
+        order: 1;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/* este es la imagen central del index */
+
+.text-inicio h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-size: 1em;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.parrafo,
+.bienvenidos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-size: 10px;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.luces {
+    width: 75vh;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+
+}
+
+img {
+    width: 100%;
+}
+
+.home {
+    align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .text-inicio h2 {
+        font-size: 1em;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .parrafo,
+    .bienvenidos {
+        font-size: 10px;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .luces {
+        width: 85vh;
+        max-width: 1000px;
+        min-width: 320px;
+        margin: auto;
+
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1201px) {
+    .luces {
+        width: 100vh;
+        max-width: 1000px;
+        min-width: 320px;
+        margin: auto;
+
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
+
+/* este es el footer */
+.footer-logo2 {
+    display: none;
+}
+
+.footer-mapa {
+    display: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    list-style: none;
+}
+
+.copy-footer {
+    display: block;
+    text-align: center;
+}
+
+.contenedor-footer {
+    width: 100%;
+    border-bottom: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-redes,
+.footer-contactos,
+.footer-barra {
+    font-size: 10px;
+    padding: 1em;
+    display: list-item;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+iframe {
+    height: 160px;
+    width: 160px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .footer-barra {
+        display: none;
+    }
+
+    .footer-logo2 {
+        display: none;
+    }
+
+    .footer-mapa {
+        display: flex;
+    }
+
+    .contenedor-footer,
+    .footer-redes,
+    .footer-mapa {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1201px) {
+
+    .footer-logo2 {
+        min-width: 20px;
+        min-height: 20px;
+        border-radius: 30px;
+    }
+
+    .footer-barra {
+        display: block;
+    }
+
+    .footer-logo2 {
+        display: block;
+    }
+
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-mapa {
+        display: block;
+    }
+}
+
+
+/* Aqui empieza alojamiento */
+.alojamiento {
+    padding: 0, 4em 0em;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.inicio-parrafo {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+img {
+    height: 250px;
+    width: 350;
+    margin: 0 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .contenedor-galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contenedor-galeria img {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media (min-width:1201px) {
+
+    .contenedor-galeria {
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        height: 450px;
+        width: 350;
+        margin: 0 20px;
+    }
+}
+
+/* Aqui empieza servicios */
+
+.servicios {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+img {
+    height: 250px;
+    width: 350;
+    margin: 0 20px;
+}
+
+/* Aqui empieza Actividades */
+.actividades {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif text-align: center;
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+img {
+    height: 250px;
+    width: 350;
+    margin: 0 20px;
+}
+
+
+/*  Aqui empieza reservas */
+.consultas {
+    text-align: center;
+
+}
+
+.formulario {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
+form input,
+form textarea {
+    outline: unset;
+}
