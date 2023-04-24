@@ -139,9 +139,8 @@ ol {
 }
 
 .luces {
-    width: 80%;
-    /* max-width: 1000px;
-    min-width: 320px; */
+    width: 1200;
+    height: 1200;
     margin-left: auto;
     margin-right: auto;
 
@@ -189,33 +188,33 @@ img {
 
 @media (min-width: 1201px) {
 
-.luces {
-    width: 80%;
-    max-width: 1000px;
-    min-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
+    .luces {
+        width: 80%;
+        max-width: 1000px;
+        min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
 
-}
+    }
 
-img {
-    width: 100%;
-}
+    img {
+        width: 100%;
+    }
 
-.text-inicio h2 {
-    font-size: 1.8em;
-    justify-content: center;
-    padding: 10px;
-    text-align: center;
-}
+    .text-inicio h2 {
+        font-size: 1.8em;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
 
-.parrafo,
-.bienvenidos {
-    font-size: 15px;
-    justify-content: center;
-    padding: 10px;
-    text-align: center;
-}
+    .parrafo,
+    .bienvenidos {
+        font-size: 15px;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
 
 }
 
@@ -377,7 +376,7 @@ img {
     }
 
     img {
-        height: 3000px;
+        height: 300px;
         width: 350;
         margin: 0 20px;
     }
@@ -396,7 +395,7 @@ img {
     padding: 10px;
 }
 
-.contenedor-galeria-p{
+.contenedor-galeria-p {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -506,12 +505,10 @@ img {
 
 
 /*  Aqui empieza reservas */
-/* html{
-    font-size: 62,5%;
-} */
-.formulario {
-    font-size: 1, 9rem;
-    background-image: url(reservas.jpg);
+
+.section {
+    font-size: 1,9rem;
+    background-image: url("reservas.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -547,12 +544,17 @@ form {
 }
 
 .form-text::placeholder {
-    font-size: 1, 4rem;
+    font-size: 1,4rem;
 }
+h2{
+    text-align: center;
+    color: #2755c2;
+    padding-bottom: 16px;
 
+}
 .form-label {
     display: block;
-    font-size: 1, 4rem;
+    font-size: 1,4rem;
     font-weight: 300px;
 }
 
