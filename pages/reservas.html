@@ -37,30 +37,24 @@
         </div>
         <section class="formulario">
             <form>
-                <div>
-                    <label for="nombre"> Nombre</label>
-                    <input type="nombre" type="text" placeholder="nombre">
-                </div>
-                <div>
-                    <label for="telefono"> Telefono</label>
-                    <input type="telefono" type="tel" placeholder="telefono">
-                </div>
-                <div>
-                    <label for="email"> Email</label>
-                    <input type="email" placeholder="email">
-                </div>
-                <div>
-                    <label> Mensaje</label>
-                    <textarea rows="10" name="mensaje" required></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
+                <label for="nombre" class="form-label"> Nombre:</label>
+                <input type="text" class="form-imput" name="nombre" placeholder="nombre" id="nombre">
+
+                <label for="telefono" class="form-label"> Telefono:</label>
+                <input type="number" class="form-imput" name="telefono" placeholder="telefono" id="telefono">
+
+                <label for="correo" class="form-label"> Correo:</label>
+                <input type="email" class="form-imput" name="correo" placeholder="correo electronico" id="correo">
+
+                <label for="mensaje" class="form-label"> Escriba su consulta:</label>
+                <textarea class="form-text" name="mensaje" id="mensaje"placeholder="Escriba su consulta"></textarea> </textarea>
+
+                <input type="submit" class="enviar" value="Enviar su consulta">
+
             </form>
         </section>
     </main>
 
-    <hr>
     <footer class="contenedor-footer">
         <div class="footer-logo2">
             <img src="../img/logo2.jfif" alt="logo sitio">

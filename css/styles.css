@@ -359,36 +359,23 @@ img {
 }
 
 /* Aqui empieza servicios */
-
 .servicios {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
+    padding: 0, 4em 0em;
+    font-size: 1rem;
     text-align: center;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-img {
-    height: 250px;
-    width: 350;
-    margin: 0 20px;
-}
-
-/* Aqui empieza Actividades */
-.actividades {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
+.inicio-parrafo {
     text-align: center;
+    justify-content: center;
+    padding: 10px;
 }
 
-.flex-container {
+.contenedor-galeria {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    text-align: center;
     gap: 20px;
 }
 
@@ -398,29 +385,130 @@ img {
     margin: 0 20px;
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .contenedor-galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contenedor-galeria img {
+        width: 60%;
+        height: 60%;
+    }
+}
+@media (min-width:1201px) {
+
+    .contenedor-galeria {
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        height: 450px;
+        width: 350;
+        margin: 0 20px;
+    }
+}
+
+
+/* Aqui empieza Actividades */
+.actividades {
+    padding: 0, 4em 0em;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.inicio-parrafo {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+img {
+    height: 250px;
+    width: 350;
+    margin: 0 20px;
+}
 
 /*  Aqui empieza reservas */
+/* html{
+    font-size: 62,5%;
+} */
+body{
+    /* font-size: 1,9rem; */
+    /* background: url(reservas.jpg); */
+    /* background-attachment: fixed;
+    background-size: cover; */
+}
+form{
+    width: 50%;
+    min-width: 300px;
+    background: rgba(0,0, blue, 0,491);
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    color: #2755c2;
+}
+.form-imput{
+    width: 100%;
+    height: 45px;
+    background: rgba(0,0, 0, 0,7);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2756c265;
+    font-size: 1,4rem;
+    margin-bottom: 15px;
+    color: white;
+}
+.form-text{
+    width: 100%;
+    background: rgba(0,0, 0, 0,7);
+    padding: 10px;
+    border-bottom: 2px solid #2755c2;
+}
+.form-text::placeholder{
+    font-size: 1,4rem;
+}
+.form-label{
+    display: block;
+    font-size: 1,4rem;
+    font-weight: 300px;
+}
+.enviar{
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0, 0,0,7);
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: #2755c2;
+    color: white;
+    text-align: center;
+    font-size: 1,6rem;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    transition: all 5s ease;
+}
+.enviar:hover{
+    background: #3364d685;
+}
 .consultas {
     text-align: center;
 
-}
-
-.formulario {
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-}
-
-form div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-
-}
-
-form input,
-form textarea {
-    outline: unset;
 }
