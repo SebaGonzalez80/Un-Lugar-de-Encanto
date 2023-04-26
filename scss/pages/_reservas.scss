@@ -1,0 +1,73 @@
+
+.section {
+    font-size: 1,9rem;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+form{
+    width: 50%;
+    min-width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    color: #2755c2;
+}
+
+.form-imput {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2756c265;
+    font-size: 1, 4rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.form-text {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid #2755c2;
+}
+
+.form-text::placeholder {
+    font-size: 1,4rem;
+}
+h2{
+    text-align: center;
+    color: #2755c2;
+    padding-bottom: 10px;
+
+}
+.form-label {
+    display: block;
+    font-size: 1,4rem;
+    font-weight: 300px;
+}
+
+.enviar {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: #2755c2;
+    color: white;
+    text-align: center;
+    font-size: 1, 6rem;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    transition: all 5s ease;
+}
+
+.enviar:hover {
+    background: #3364d685;
+}
+
+.consultas {
+    text-align: center;
+    padding: 20px;
+
+}

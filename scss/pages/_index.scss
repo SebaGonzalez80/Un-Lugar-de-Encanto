@@ -1,0 +1,96 @@
+.text-inicio h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.parrafo,
+.bienvenidos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    font-size: 10px;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.luces {
+    width: 1200;
+    height: 1200;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+img {
+    width: 80%;
+}
+
+.home {
+    align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .text-inicio h2 {
+        font-size: 1em;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .parrafo,
+    .bienvenidos {
+        font-size: 10px;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .luces {
+        width: 80%;
+        max-width: 1000px;
+        min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1201px) {
+
+    .luces {
+        width: 80%;
+        max-width: 1000px;
+        min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .text-inicio h2 {
+        font-size: 1.8em;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .parrafo,
+    .bienvenidos {
+        font-size: 15px;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+}

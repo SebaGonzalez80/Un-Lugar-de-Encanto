@@ -1,0 +1,59 @@
+/* Aqui empieza Actividades */
+.actividades {
+    padding: 0, 4em 0em;
+    font-size: 1, 4rem;
+    text-align: center;
+}
+
+.inicio-parrafo {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+img {
+    height: 250px;
+    width: 350;
+    margin: 0 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .contenedor-galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenedor-galeria img {
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+
+    @media (min-width:1201px) {
+
+        .contenedor-galeria {
+            display: flex;
+            flex-flow: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+        .contenedor-galeria img {
+                height: 25vw;
+                width: 25vw;
+                margin: 0 20px;
+            }
+        }
+    

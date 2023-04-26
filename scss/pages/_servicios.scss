@@ -1,0 +1,59 @@
+/* Aqui empieza servicios */
+.servicios {
+    padding: 0, 4em 0em;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.inicio-parrafo {
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor-galeria-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+img {
+    height: 250px;
+    width: 350;
+    margin: 0 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .contenedor-galeria-p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__img {
+            width: 80%;
+            height: 80%;
+        }
+    }
+}
+
+@media (min-width:1201px) {
+
+    .contenedor-galeria-p {
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+    &__img {
+        height: 300px;
+        width: 250;
+        margin: 0 20px;
+    }
+}
+}
