@@ -1,96 +1,53 @@
-.text-inicio h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+.galeria {
+    padding: 15px;
+}
+
+.galeria-title {
+    text-align: center;
+}
+
+.galeria-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.galeria-parrafo {
+    text-align: center;
     font-size: 1rem;
-    justify-content: center;
-    padding: 10px;
-    text-align: center;
-}
-
-.parrafo,
-.bienvenidos {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
-    font-size: 10px;
-    justify-content: center;
-    padding: 10px;
-    text-align: center;
-}
-
-.luces {
-    width: 1200;
-    height: 1200;
     margin-left: auto;
     margin-right: auto;
-
-}
-
-img {
-    width: 80%;
-}
-
-.home {
-    align-items: center;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
-    .text-inicio h2 {
-        font-size: 1em;
-        justify-content: center;
-        padding: 10px;
-        text-align: center;
+    .galeria-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 25vh);
     }
 
-    .parrafo,
-    .bienvenidos {
-        font-size: 10px;
-        justify-content: center;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .luces {
-        width: 80%;
-        max-width: 1000px;
-        min-width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    img {
+    .galeria-contenedor img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
+    .img-destacada {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
 }
 
 @media (min-width: 1201px) {
 
-    .luces {
-        width: 80%;
-        max-width: 1000px;
-        min-width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-
+    .galeria-contenedor {
+    grid-template-columns: 2fr repeat (2, 1fr);
+    grid-template-rows: repeat (2, 30vh);
+   
     }
-
-    img {
-        width: 100%;
-    }
-
-    .text-inicio h2 {
-        font-size: 1.8em;
-        justify-content: center;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .parrafo,
-    .bienvenidos {
-        font-size: 15px;
-        justify-content: center;
-        padding: 10px;
-        text-align: center;
+    .img-destacada {
+        grid-column: span 2;
     }
 
 }
