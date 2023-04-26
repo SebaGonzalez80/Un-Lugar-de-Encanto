@@ -3,6 +3,8 @@
     padding: 0, 4em 0em;
     font-size: 1, 4rem;
     text-align: center;
+    text-decoration: none;
+    color: white;
 }
 
 .inicio-parrafo {
@@ -11,7 +13,7 @@
     padding: 10px;
 }
 
-.contenedor-galeria {
+.contenedor-galeria p {
     display: flex;
     flex-direction: column;
     justify-content: center;
