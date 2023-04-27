@@ -42,12 +42,19 @@
 @media (min-width: 1201px) {
 
     .galeria-contenedor {
-    grid-template-columns: 2fr repeat (2, 1fr);
-    grid-template-rows: repeat (2, 30vh);
-   
+        display: grid;
+        grid-template-columns: 2fr repeat(2, 1fr);
+        grid-template-rows: repeat(2, 25vh);
     }
+    .galeria-contenedor img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+    }
+
     .img-destacada {
         grid-column: span 2;
+        grid-row: span 2;
     }
 
 }

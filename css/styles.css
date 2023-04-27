@@ -260,11 +260,18 @@ iframe {
 }
 @media (min-width: 1201px) {
   .galeria-contenedor {
-    grid-template-columns: 2fr repeat 2, 1fr;
-    grid-template-rows: repeat 2, 30vh;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(2, 25vh);
+  }
+  .galeria-contenedor img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
   }
   .img-destacada {
     grid-column: span 2;
+    grid-row: span 2;
   }
 }
 /* Aqui empieza Actividades */
@@ -272,6 +279,8 @@ iframe {
   padding: 0, 4em 0em;
   font-size: 1, 4rem;
   text-align: center;
+  text-decoration: none;
+  color: white;
 }
 
 .inicio-parrafo {
@@ -280,7 +289,7 @@ iframe {
   padding: 10px;
 }
 
-.contenedor-galeria {
+.contenedor-galeria p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -376,8 +385,13 @@ img {
   }
 }
 /* Aqui empieza servicios */
+.title-galeria {
+  margin-top: 30px;
+  text-align: center;
+}
+
 .servicios {
-  padding: 0, 4em 0em;
+  padding-bottom: 30px;
   font-size: 1rem;
   text-align: center;
 }
@@ -388,7 +402,7 @@ img {
   padding: 10px;
 }
 
-.contenedor-galeria-p {
+.contenedor-galeria p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -403,27 +417,31 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  .contenedor-galeria-p {
+  .title-galeria {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .title-galeria .contenedor-galeria p {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
-  .contenedor-galeria-p__img {
+  .title-galeria .contenedor-galeria p__img {
     width: 80%;
     height: 80%;
   }
 }
 @media (min-width: 1201px) {
-  .contenedor-galeria-p {
+  .contenedor-galeria p {
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
   }
-  .contenedor-galeria-p__img {
+  .contenedor-galeria p__img {
     height: 300px;
     width: 250;
     margin: 0 20px;
