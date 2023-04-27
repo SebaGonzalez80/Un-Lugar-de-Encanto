@@ -40,21 +40,23 @@
 }
 
 @media (min-width: 1201px) {
-
     .galeria-contenedor {
         display: grid;
-        grid-template-columns: 2fr repeat(2, 1fr);
-        grid-template-rows: repeat(2, 25vh);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 25vh);
     }
+
     .galeria-contenedor img {
-            width: 80%;
-            height: 80%;
-            object-fit: contain;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-right: auto;
+        margin-left: auto;
+        gap: 30px;
     }
 
     .img-destacada {
         grid-column: span 2;
         grid-row: span 2;
     }
-
 }
