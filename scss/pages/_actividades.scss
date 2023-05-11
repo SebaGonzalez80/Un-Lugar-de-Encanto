@@ -1,4 +1,4 @@
-/* Aqui empieza Actividades */
+
 .actividades {
     padding: 0, 4em 0em;
     font-size: 1, 4rem;
@@ -13,7 +13,8 @@
     padding: 10px;
 }
 
-.contenedor-galeria p {
+.inicio-parrafo p {
+    font-size: 1,5em ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,6 +46,14 @@ img {
 
 
 @media (min-width:1201px) {
+    .inicio-parrafo p {
+        font-size: 1,5em ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
 
     .contenedor-galeria {
         display: flex;
