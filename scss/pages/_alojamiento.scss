@@ -1,43 +1,75 @@
 /* Aqui empieza alojamiento */
-.alojamiento h2{
+
+.alojamiento h2 {
     margin-top: 15px;
     padding: 0, 4em 0em;
-    font-size: 2,7em;
+    font-size: 2, 7em;
     text-align: center;
 }
 
 .inicio-parrafo p {
-    font-size: 2,0em;
+    font-size: 2, 0em;
     margin-top: 15px;
     text-align: center;
     justify-content: center;
     padding: 10px;
 }
-.inicio-parrafo p{
+
+.inicio-parrafo p {
     display: none;
 }
 
-.contenedor-galeria {
+.container {
+    width: 100%;
+    min-width: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 90px;
+
+}
+
+.content-seccion {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    gap: 20px;
 }
 
-img {
-    height: 350px;
-    width: 300;
-    margin: 0 20px;
+.content-seccion {
+    flex: 1;
+    margin: 20px 20px;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
 }
+.content-seccion .card img{
+    width: 100%;
+    height: auto;
+}
+.content-seccion .card h3{
+    margin: 15px 0px;
+    font-size: 2,7em;
+    color: white;
+}
+.content-seccion .card p{
+    font-size: 1.25em;
+    line-height: 1.5;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
 
 @media (min-width: 768px) and (max-width: 1200px) {
-.inicio-parrafo p{
-    display: block;
-}
-    .contenedor-galeria {
+    .inicio-parrafo p {
+        display: block;
+    }
+
+    .content-seccion {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
@@ -50,33 +82,35 @@ img {
 }
 
 @media (min-width:1201px) {
-    .inicio-parrafo p{
+    .inicio-parrafo p {
         display: block;
     }
-    .alojamiento h2{
+
+    .alojamiento h2 {
         margin-top: 20px;
-        font-size: 2,7em;
+        font-size: 2, 7em;
         text-align: center;
     }
 
-    .contenedor-galeria {
+    .content-seccion {
         display: flex;
         flex-flow: nowrap;
         justify-content: center;
         align-items: center;
         text-align: center;
 
-    &__img {
-        height: 300px;
-        width: 350;
-        margin: 0 20px;
+        &__img {
+            height: 300px;
+            width: 350;
+            margin: 0 20px;
+        }
+
+        &__p {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+
     }
-    &__p{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    
-}
 }
