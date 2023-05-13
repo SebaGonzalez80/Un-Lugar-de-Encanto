@@ -400,27 +400,33 @@ button:hover {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 }
-.actividades {
-  padding: 0, 4em 0em;
-  font-size: 1, 4rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
-
-.inicio-parrafo {
+.actividades h2 {
+  font-size: 2, 0em;
+  margin-top: 15px;
   text-align: center;
   justify-content: center;
   padding: 10px;
 }
 
 .inicio-parrafo p {
-  font-size: 1, 5em;
+  font-size: 2, 0em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   gap: 10px;
+}
+
+.inicio-parrafo p {
+  display: none;
+}
+
+.contenedor-galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
 }
 
 img {
@@ -430,6 +436,9 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+  .inicio-parrafo p {
+    display: block;
+  }
   .contenedor-galeria {
     display: flex;
     flex-direction: column;
@@ -437,16 +446,15 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
-  .contenedor-galeria img {
-    width: 80%;
-    height: 80%;
+  .contenedor-galeria__img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (min-width: 1201px) {
   .inicio-parrafo p {
     font-size: 1, 5em;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 10px;
