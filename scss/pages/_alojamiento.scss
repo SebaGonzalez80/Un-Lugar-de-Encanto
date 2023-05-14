@@ -1,64 +1,78 @@
 /* Aqui empieza alojamiento */
-
-.alojamiento h2 {
-    margin-top: 15px;
-    padding: 0, 4em 0em;
-    font-size: 2, 7em;
-    text-align: center;
-}
-
-.inicio-parrafo p {
-    font-size: 2, 0em;
-    margin-top: 15px;
+.titulo h2{
+    display: flex;
     text-align: center;
     justify-content: center;
-    padding: 10px;
-}
 
-.inicio-parrafo p {
-    display: none;
-}
 
-.container {
-    width: 100%;
-    min-width: 100vh;
-    background-color: #f7f7f7;
+}
+.cuerpo{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    padding: 0px 90px;
-
-}
-
-.content-seccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background: whitesmoke;
     align-items: center;
-    text-align: center;
+    height: 100vh;
+}
+.cont-alojamiento{
+    display: flex;
+    max-width: 1300;
+}
+.carta{
+    height: 500px;
+    margin: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 5px 5px 20px black;
+    transform: translateY(4%);
+
+}
+    img{
+        height: 500px;
+        width: 350px;
+        border-radius: 3px;
+    }
+
+
+.contenido{
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27, 27,27,0.5);
+    color: white;
+    transition: 0.5s;
 }
 
-.content-seccion {
-    flex: 1;
-    margin: 20px 20px;
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+.contenido h3{
+    margin: 10px;
+    font-size: 40px;
+
 }
-.content-seccion .card img{
-    width: 100%;
-    height: auto;
+.contenido p{
+   font-size: 20px;
+   margin: 20px;
+visibility: hidden;
+opacity: 0;
 }
-.content-seccion .card h3{
-    margin: 15px 0px;
-    font-size: 2,7em;
-    color: white;
+.carta:hover{
+    cursor: pointer;
 }
-.content-seccion .card p{
-    font-size: 1.25em;
-    line-height: 1.5;
-    padding: 0px 10px;
-    margin-bottom: 20px;
-    color: white;
+.carta:hover .contenido{
+    height: 220px;
+    bottom: 240px;
+    background: black;
 }
+.carta:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.carta:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+
 
 
 
@@ -67,7 +81,7 @@
         display: block;
     }
 
-    .content-seccion {
+    .cont-alojamiento {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -82,17 +96,16 @@
 }
 
 @media (min-width:1201px) {
-    .inicio-parrafo p {
-        display: block;
-    }
-
-    .alojamiento h2 {
+    .alojamiento-text h2 {
         margin-top: 20px;
         font-size: 2, 7em;
         text-align: center;
     }
+    .alojamiento-text p {
+        display: block;
+    }
 
-    .content-seccion {
+    .cont-alojamiento {
         display: flex;
         flex-flow: nowrap;
         justify-content: center;
