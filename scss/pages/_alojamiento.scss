@@ -1,94 +1,133 @@
 /* Aqui empieza alojamiento */
-.titulo h2{
+main {
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+.titulo h2 {
+    font-size: 2,7em;
     display: flex;
     text-align: center;
     justify-content: center;
-
-
+    margin-top: 0px;
+    padding: 15px;
 }
-.cuerpo{
+.titulo p {
+    font-size: 2, 0em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background: whitesmoke;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
+    gap: 10px;
 }
-.cont-alojamiento{
+
+.titulo p {
+    display: none;
+}
+
+.cuerpo {
+    background-color: whitesmoke;
+    color: white;
+    text-align: center;
     display: flex;
-    max-width: 1300;
+    flex-direction: column;
+    align-items: center;
+
 }
-.carta{
+
+.cuerpo .cont-alojamiento {
+    padding: 50px 0px;
+}
+
+.carta {
+    background-position: center center;
+    background-size: cover;
     height: 500px;
     margin: 50px;
     border-radius: 6px;
     overflow: hidden;
     background-color: white;
     box-shadow: 5px 5px 20px black;
-    transform: translateY(4%);
+    transform: translateY(3%);
 
 }
-    img{
-        height: 500px;
-        width: 350px;
-        border-radius: 3px;
-    }
+
+img {
+    height: 500px;
+    width: 300px;
+    border-radius: 3px;
+}
 
 
-.contenido{
+.contenido {
     height: 200px;
-    width: 350px;
+    width: 300px;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    background: rgba(27, 27,27,0.5);
+    background: rgba(27, 27, 27, 0.5);
     color: white;
     transition: 0.5s;
 }
 
-.contenido h3{
+.contenido h3 {
     margin: 10px;
-    font-size: 40px;
+    font-size: 30px;
 
 }
-.contenido p{
-   font-size: 20px;
-   margin: 20px;
-visibility: hidden;
-opacity: 0;
+
+.contenido p {
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
 }
-.carta:hover{
+
+.carta:hover {
     cursor: pointer;
 }
-.carta:hover .contenido{
+
+.carta:hover .contenido {
+    align-items: center;
     height: 220px;
+    width: 300;
     bottom: 240px;
     background: black;
 }
-.carta:hover p{
+
+.carta:hover p {
     opacity: 1;
     visibility: visible;
 }
-.carta:hover img{
-    transform: scale(1.1) rotate(-3deg);
+
+.carta:hover img {
+    transform: scale(1.1);
 }
 
 
-
-
-
 @media (min-width: 768px) and (max-width: 1200px) {
+    .cuerpo .cont-alojamiento {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .cuerpo .cont-alojamiento h2 {
+        margin-top: 0px;
+    }
     .inicio-parrafo p {
         display: block;
     }
 
-    .cont-alojamiento {
+    .carta {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+        align-items: center;
 
-        &__img {
+
+        .carta img {
             width: 100%;
             height: 100%;
         }
@@ -101,7 +140,8 @@ opacity: 0;
         font-size: 2, 7em;
         text-align: center;
     }
-    .alojamiento-text p {
+
+    .titulo p {
         display: block;
     }
 
@@ -111,14 +151,15 @@ opacity: 0;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
 
-        &__img {
+    .carta img {
             height: 300px;
             width: 350;
             margin: 0 20px;
         }
 
-        &__p {
+    .carta p {
             text-align: center;
             justify-content: center;
             align-items: center;
@@ -126,4 +167,3 @@ opacity: 0;
 
 
     }
-}
